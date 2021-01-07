@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+        
+        body {
+            overflow: hidden;
+        }
+
+        main {
+            position: absolute;
+            width: 100vw;
+        }
+
+        .btn-bar {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .paused {
+            box-shadow: 0px 0px 2px black;
+        }
+
+        button {
+            background: none;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 5px;
+            display: block;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="btn-bar">
+            <button onclick="interactivity()">Stop Interactivity</button>
+        </div>
+    </main>
+    <canvas></canvas>
+    <script src="canvas.js"></script>
+</body>
+</html>
